@@ -1,0 +1,36 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <script src="//code.jquery.com/jquery-3.1.1.min.js"> </script>
+     <script  src="js.js" ></script>
+     
+     <div id="form">
+         <form>
+             <input type="text" name="nom"/><br/>
+               <input type="number" name="nHabitants"/><br/>
+               <input type="submit" value="Ajouter"/>
+         </form>
+         
+     
+     </div>  
+      <div id="liste"> 
+          
+     </div> 
+{% endblock %}
+
+{% block stylesheets %}
+    <style>
+        #form{
+            float: left;
+        }
+        
+        #liste{
+            float: right;
+        }
+        
+        div {
+            width: 200px;
+            border: 1px solid #916319 ;
+        }
+    </style>
+{% endblock %}
